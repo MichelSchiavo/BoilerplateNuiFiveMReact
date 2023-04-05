@@ -1,8 +1,8 @@
 import { useEffect } from "react";
-import { useOppenedNuiContext } from "contexts/OppenedNuiContext";
+import { useNuiNuiContext } from "../context/NuiContext";
 
 export function EventListener() {
-  const { changeStatus } = useOppenedNuiContext();
+  const { changeStatus } = useNuiNuiContext();
 
   useEffect(() => {
     window.addEventListener("message", (e) => {

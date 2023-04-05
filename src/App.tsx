@@ -1,7 +1,7 @@
-import { useOppenedNuiContext } from "contexts/OppenedNuiContext";
+import { useNuiNuiContext } from "./context/NuiContext";
 
 function App() {
-  const { status } = useOppenedNuiContext();
+  const { status } = useNuiNuiContext();
 
   return <>{status ? <h1>Nui OPEN</h1> : null}</>;
 }
